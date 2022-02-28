@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h3 class="mt-5">Live Streaming</h3>
+                <img src="{{ url_for('video_feedout') }}" width="50%">
+            </div>
+            <h3>{{ prediction_text }}</h3>
+            <br>
+            <div style="display:inline-block">
+                <div style="float:left">
+            <form action="/cam", style="display:inline-block">
+                    <input type="submit" value="Login">
+                </form>
+                    </div>
+            <form action="/camout", style="display:inline-block">
+                    <input type="submit" value="Logout">
+                </form>
+
+            </div>
+
+
+        </div>
+    </div>
+    </body>
+
+
+</html>
