@@ -367,6 +367,7 @@ def video_feedout():
     # return 'Hello'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(port=port)
 
 #python Version_v4.py
