@@ -1,8 +1,0 @@
-Flask
-gunicorn
-cmake
-dlib
-opencv-python
-face-recognition
-scipy
-numpy
