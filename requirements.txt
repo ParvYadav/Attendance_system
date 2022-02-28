@@ -2,7 +2,7 @@ Flask
 gunicorn
 cmake
 dlib
-python-opencv
+opencv-python
 face-recognition
 scipy
 numpy
