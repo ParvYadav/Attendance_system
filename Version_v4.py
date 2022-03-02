@@ -5,6 +5,7 @@ import numpy as np
 from datetime import datetime
 import dlib
 from scipy.spatial import distance as dist
+import os
 
 global camera
 app = Flask(__name__)
@@ -365,9 +366,10 @@ def video_feedout():
 
     return Response(gen_framesout(app), mimetype='multipart/x-mixed-replace; boundary=frame')
     # return 'Hello'
-
+  
+port = int(os.environ.get('PORT', 5000))
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(port=port)
+    app.run(host = '0.0.0.0', port=port, debug=Ture)
+    #app.run(port=port)
 
 #python Version_v4.py
