@@ -6,5 +6,4 @@ opencv-python
 face-recognition
 scipy
 numpy
-opencv-python-headless
 opencv-contrib-python-headless
