@@ -367,9 +367,10 @@ def video_feedout():
     return Response(gen_framesout(app), mimetype='multipart/x-mixed-replace; boundary=frame')
     # return 'Hello'
   
-port = int(os.environ.get('PORT', 5000))
+# port = int(os.environ.get('PORT', 5000))
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port=port, debug=Ture)
+    #app.run(host = '0.0.0.0', port=port, debug=Ture)
+    app.run(debug=Ture)
     #app.run(port=port)
 
 #python Version_v4.py
